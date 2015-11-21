@@ -1,0 +1,156 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="ANN Search" />
+        <meta name="keywords" content="Nearest Neighbor, Sparse" />
+        <meta name="author" content="Qingqun Ning" />
+        <link rel="stylesheet" href="../css/main.css" type="text/css" />
+        <title>SPQ</title>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-63155504-2', 'auto');
+ga('send', 'pageview');
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="wrap">
+                <div id="intro">
+                    <h1 align="center">Scalable Image Retrieval by Sparse Product Quantization</h1>
+                    <div align="center">
+                        <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="20%" height="30" align='center'><a target="_blank" href="http://nqq.github.io" target="_blank">Qingqun Ning</a></td>
+                                <td width="20%" height="30" align='center'><a target="_blank" href="http://jkzhu.github.io" target="_blank">Jianke Zhu</a></td>
+                                <td width="20%" height="30" align='center'>Zhiyuan Zhong</td>
+                                <td width="20%" height="30" align='center'><a target="_blank" href="http://www.mysmu.edu.sg/faculty/chhoi/index.html">Steven C.H. Hoi</a></td>
+                                <td width="20%" height="30" align='center'>Chun Chen</td>
+                            </tr>
+
+                            <!--<tr>-->
+                                <!--<td height="30" colspan="3"  align='center'>Technical report</td>-->
+                            <!--</tr>-->
+
+                        </table>
+                    </div>
+                </div>
+                <!--div
+                    <div id="mypic"><img src="images/suha1.jpg" alt="" width="160" height="160" align="bottom" /></div>
+                -->
+                <div class="nline1"></div>
+            </div>
+        </div>
+
+
+        <div id="cont">
+            <div class="wrap">          
+                <h2 id="subject">Abstract</h2>
+                <p align="justify">
+                Fast Approximate Nearest Neighbor search technique for high-dimensional feature indexing is the crux of large-scale image retrieval. A recent promising      technique is Product Quantization, which attempts to index image features by <b>decomposing the feature space into a Cartesian product of low dimensional       subspaces and quantizing each of them separately</b>. Despite the promising results reported, their quantization approach follows the typical hard               assignment of traditional quantization methods, which may result in large quantization errors and thus inferior search performance. Unlike the existing      approaches, in this paper, we propose a novel approach called <b>Sparse Product Quantization</b> to encoding the high-dimensional feature vectors into sparse       representation. <b>We optimize the sparse representations of the data vectors by minimizing their quantization errors</b>, making the resulting representation      is essentially close to the original data in practice. Experiments show that the proposed Quantization technique  is not only able to compress data, but     also an effective encoding technique. We obtain state-of-the-art results for ANN search on four public image datasets. Furthermore, the result on the        image retrieval demonstrate the efficacy  of our proposed method.
+                </p>
+                <div class="line"></div>
+            </div>
+        </div>
+
+
+
+
+        <div id="cont">
+            <div class="wrap">
+                <h2 id="subject">Overview</h2>
+                <center>
+                    <img src="images/overview2.png" alt="overview picture" width="500px" align="bottom"> </img>
+
+                <!--<div class="caption"><p class="caption-content"><strong class="fig-label">Figure 1</strong>. -->
+                    <!--The system view of Sparse Product Quantization for ANN search . </p>-->
+                <!--</div>-->
+
+                <div class="nline2"></div>
+                </center>
+            </div>
+        </div>
+
+
+
+        <div id="cont">
+            <div class="wrap">
+                <h2 id="subject">Performance</h2>
+
+                <ul> <h3>
+                        Comparison with Vector Quantization Methods
+                    </h3>
+                </ul>
+                <!--<p class="table-head" align="justify">-->
+                <!--Comparison with Vector Quantization Methods-->
+                <!--</p>-->
+                <center>
+                <img width="900px" src="images/vq.jpg">
+                </center>
+
+                <ul>
+                    <h3>
+                        Comparison with Hashing-based Methods.
+                    </h3>
+                </ul>
+                <!--<p class="table-head" align="justify">-->
+                <!--Comparison with Hashing-based Methods.-->
+                <!--</p>-->
+                <center>
+                <img width="800px" src="images/hash.jpg">
+                </center>
+
+                <div class="line"></div>
+            </div>
+        </div>
+
+
+        <div id="cont">
+            <div class="wrap">
+                <h2 id="subject">Download</h2>
+                <ul class="mark">
+
+                    <li class="mark"> Preprint:
+                        <a href="spq/spq.pdf">pdf</a> 
+                    </li>
+                    <li class="mark"> Matlab:
+                        <a href="http://nqq.github.io/spq/spq.rar">code </a> (~20K) 
+                    </li>
+
+                    <li class="mark"> Data:
+                        <a href="http://corpus-texmex.irisa.fr/">link</a> 
+                    </li>
+
+
+                </ul>
+            <p>Note :This Matlab version is significantly slower than our C implementation. Reporting timings with this implementation is not relevant. We have used our C version to generate all the timing results</p>
+            <div class="line"></div>
+            </div>
+        </div>
+
+
+
+
+        <div id="cont">
+            <div class="wrap">
+                <h2 id="subject">Acknowledgments</h2>
+                The work was supported in part by National Natural Science Foundation of China under Grants (61103105 and 91120302).
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="nline2"></div>
+        </div>
+    </body>
+</html>
+
