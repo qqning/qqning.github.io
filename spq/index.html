@@ -56,7 +56,7 @@ ga('send', 'pageview');
             <div class="wrap">          
                 <h2 id="subject">Abstract</h2>
                 <p align="justify">
-                Fast Approximate Nearest Neighbor search technique for high-dimensional feature indexing is the crux of large-scale image retrieval. A recent promising      technique is Product Quantization, which attempts to index image features by <b>decomposing the feature space into a Cartesian product of low dimensional       subspaces and quantizing each of them separately</b>. Despite the promising results reported, their quantization approach follows the typical hard               assignment of traditional quantization methods, which may result in large quantization errors and thus inferior search performance. Unlike the existing      approaches, in this paper, we propose a novel approach called <b>Sparse Product Quantization</b> to encoding the high-dimensional feature vectors into sparse       representation. <b>We optimize the sparse representations of the data vectors by minimizing their quantization errors</b>, making the resulting representation      is essentially close to the original data in practice. Experiments show that the proposed Quantization technique  is not only able to compress data, but     also an effective encoding technique. We obtain state-of-the-art results for ANN search on four public image datasets. Furthermore, the result on the        image retrieval demonstrate the efficacy  of our proposed method.
+                Fast Approximate Nearest Neighbor (ANN) search technique for high-dimensional feature indexing and retrieval is the crux of large-scale image retrieval. A recent promising technique is Product Quantization, which attempts to index high-dimensional image features by <b>decomposing the feature space into a Cartesian product of low dimensional subspaces and quantizing each of them separately</b>. Despite the promising results reported, their quantization approach follows the typical hard assignment of traditional quantization methods, which may result in large quantization errors and thus inferior search performance. Unlike the existing approaches, in this paper, we propose a novel approach called <b>Sparse Product Quantization (SPQ)</b> to encoding the high-dimensional feature vectors into sparse representation. <b>We optimize the sparse representations of the feature vectors by minimizing their quantization errors</b>, making the resulting representation is essentially close to the original data in practice. Experiments show that the proposed SPQ technique is not only able to compress data, but also an effective encoding technique. We obtain state-of-the-art results for ANN search on four public image datasets and the promising results of content-based image retrieval further validate the efficacy of our proposed method.
                 </p>
                 <div class="line"></div>
             </div>
@@ -119,8 +119,8 @@ ga('send', 'pageview');
                 <h2 id="subject">Download</h2>
                 <ul class="mark">
 
-                    <li class="mark"> Preprint:
-                        <a href="spq.pdf">pdf</a> 
+                    <li class="mark"> 
+                        <a href="http://arxiv.org/abs/1603.04614">arxiv</a> 
                     </li>
                     <li class="mark"> Matlab:
                         <a href="spq.tar">code </a> (~73K) 
@@ -132,7 +132,7 @@ ga('send', 'pageview');
 
 
                 </ul>
-            <p>Note :This Matlab version is significantly slower than our C implementation. Reporting timings with this implementation is not relevant. We have used our C version to generate all the timing results</p>
+            <p>Note :This Matlab version is significantly slower than our C implementation. We will soon publish our C/C++ implementation as an ANN search tool</p>
             <div class="line"></div>
             </div>
         </div>
